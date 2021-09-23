@@ -68,6 +68,26 @@ p {
   z-index: -1;
 }
 
+.svg-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.svg-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 129px;
+}
+
+.svg-wave .shape-fill {
+  fill: #202731;
+}
+
 .blue {
   background: #3c31dd;
 }
