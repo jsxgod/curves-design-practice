@@ -1,7 +1,7 @@
 body {
   margin: 0;
   color: white;
-  background: #24242a;
+  background: #0f0f10;
   overflow-x: hidden;
 }
 
@@ -36,7 +36,7 @@ p {
   border-radius: 100% 50%;
   width: 55%;
   height: 100%;
-  background-color: #24242a;
+  background-color: #0f0f10;
   transform: translate(85%, 60%);
 }
 
@@ -49,6 +49,22 @@ p {
   height: 100%;
   background-color: #3c31dd;
   transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
+.bubble {
+  margin-top: 100px;
+}
+
+.bubble::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background-color: #202731;
   z-index: -1;
 }
 
@@ -65,5 +81,5 @@ p {
 }
 
 .dark {
-  background: #0f0f10;
+  background: #202731;
 }
