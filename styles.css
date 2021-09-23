@@ -84,8 +84,24 @@ p {
   height: 129px;
 }
 
-.svg-wave .shape-fill {
+.svg-wave .shape-fill-dark {
   fill: #202731;
+}
+
+.svg-wave .shape-fill-red {
+  fill: #dd3f31;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layered-wave {
+  background-image: url("./layered-waves.svg");
 }
 
 .blue {
@@ -102,4 +118,8 @@ p {
 
 .dark {
   background: #202731;
+}
+
+.orange {
+  background: #f7770f;
 }
