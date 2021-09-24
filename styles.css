@@ -104,6 +104,11 @@ p {
   background-image: url("./layered-waves.svg");
 }
 
+.blob-wave {
+  aspect-ratio: 1920 / 600;
+  background-image: url("./blob-waves2.svg");
+}
+
 .blue {
   background: #3c31dd;
 }
