@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Asset&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Asset&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
   <title>Curvature</title>
 </head>
 <body>
@@ -54,19 +55,32 @@
     <p>Et corporis dolorem architecto porro iure. Qui quae sapiente fuga expedita, omnis ullam consectetur incidunt dicta, error eius dolore itaque explicabo deserunt voluptates maiores inventore enim ex. Amet, quae sit?</p>
   </section>
   <section class="blob-wave">
+    <h1>Nice Curves</h1>
+    <p>Et corporis dolorem architecto porro iure. Qui quae sapiente fuga expedita, omnis ullam consectetur incidunt dicta, error eius dolore itaque explicabo deserunt voluptates maiores inventore enim ex. Amet, quae sit?</p>
     <svg id="visual" viewBox="0 0 1920 600" width="1920" height="600" xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-  <g transform="translate(992.761244150841 292.75401191965074)">
-    <path id="blob1"
-      d="M163.6 -172.6C188.6 -138.6 169.3 -69.3 165.8 -3.5C162.2 62.2 174.5 124.5 149.5 164.1C124.5 203.8 62.2 220.9 8.2 212.6C-45.7 204.4 -91.5 170.8 -141.5 131.1C-191.5 91.5 -245.7 45.7 -241.5 4.2C-237.2 -37.2 -174.5 -74.5 -124.5 -108.5C-74.5 -142.5 -37.2 -173.2 16 -189.3C69.3 -205.3 138.6 -206.6 163.6 -172.6"
-      fill="#0f0f10" stroke="#0f0f10" stroke-width="6"></path>
-  </g>
-  <g transform="translate(922.8684892265507 319.192608715235)">
-    <path id="blob2"
-      d="M126.9 -97.4C175.7 -40.1 234.1 13.3 226.5 53.8C219 94.4 145.5 122 79.1 147.5C12.7 173 -46.6 196.4 -83.6 177.2C-120.6 158 -135.4 96.1 -145.1 37.7C-154.8 -20.8 -159.5 -75.9 -134.5 -127.7C-109.5 -179.6 -54.7 -228.3 -7.8 -222.1C39.1 -215.8 78.2 -154.7 126.9 -97.4"
-      fill="#0f0f10"></path>
-  </g>
-</svg>
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <g transform="translate(992.761244150841 292.75401191965074)">
+        <path id="blob1"
+          d="M163.6 -172.6C188.6 -138.6 169.3 -69.3 165.8 -3.5C162.2 62.2 174.5 124.5 149.5 164.1C124.5 203.8 62.2 220.9 8.2 212.6C-45.7 204.4 -91.5 170.8 -141.5 131.1C-191.5 91.5 -245.7 45.7 -241.5 4.2C-237.2 -37.2 -174.5 -74.5 -124.5 -108.5C-74.5 -142.5 -37.2 -173.2 16 -189.3C69.3 -205.3 138.6 -206.6 163.6 -172.6"
+          fill="#0f0f10"></path>
+      </g>
+      <g transform="translate(922.8684892265507 319.192608715235)" style="visibility: hidden;">
+        <path id="blob2"
+          d="M126.9 -97.4C175.7 -40.1 234.1 13.3 226.5 53.8C219 94.4 145.5 122 79.1 147.5C12.7 173 -46.6 196.4 -83.6 177.2C-120.6 158 -135.4 96.1 -145.1 37.7C-154.8 -20.8 -159.5 -75.9 -134.5 -127.7C-109.5 -179.6 -54.7 -228.3 -7.8 -222.1C39.1 -215.8 78.2 -154.7 126.9 -97.4"
+          fill="#0f0f10"></path>
+      </g>
+    </svg>
+    <script>
+      const tween = KUTE.fromTo(
+        '#blob1',
+        { path: '#blob1' },
+        { path: '#blob2' },
+        { repeat: 999, duration: 3000, yoyo: true }
+      );
+
+      tween.start();
+      console.log("dipa");
+    </script>
   </section>
   <section>
     <h1>Nice Curves</h1>

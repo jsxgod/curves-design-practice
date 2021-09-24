@@ -20,6 +20,7 @@ h1 {
 
 p {
   font-family: "Roboto", sans-serif;
+  width: 50%;
 }
 
 .pure-css-curve {
@@ -105,8 +106,23 @@ p {
 }
 
 .blob-wave {
+  position: relative;
   aspect-ratio: 1920 / 600;
   background-image: url("./blob-waves2.svg");
+}
+
+.blob-wave svg {
+  position: absolute;
+  top: -10px;
+  z-index: 0;
+}
+
+.blob-wave h1 {
+  z-index: 1;
+}
+
+.blob-wave p {
+  z-index: 1;
 }
 
 .blue {
